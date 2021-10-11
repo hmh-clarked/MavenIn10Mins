@@ -25,6 +25,22 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.testproject/java-sdk -->
+    <dependency>
+      <groupId>io.testproject</groupId>
+      <artifactId>java-sdk</artifactId>
+      <version>1.2.3-RELEASE</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-java</artifactId>
+        </exclusion>
+      </exclusions>
+
+    </dependency>
+
+
   </dependencies>
 
   <build>
